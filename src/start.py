@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import datetime
-from util import colors
+from util import colors, url
 
 def get_current_date():
 	now = datetime.datetime.now()
@@ -18,14 +18,15 @@ def print_table(col1, col2, col3, col4):
 	for i in range(0, len(col1)):
 		print col1[i], '\t', col2[i], '\t\t\t', col3[i], '\t', col4[i]
 
+# display matches for the current date and their status
 def matches_today(date, soup, htmltext):
 	soup = soup.find('section', attrs = {'class': 'matchdays-wrapper'})
 	current_day_matches = soup.find_all('section', attrs = {'class': 'matchday', 'data-day' : date})
 
 	for i in range(0, len(current_day_matches)):
 
-		header = current_day_matches[i].find('header', attrs = {'class': 'info-header'}).h3.text
-		print " Showing matches for ", header
+		current_day = current_day_matches[i].find('header', attrs = {'class': 'info-header'}).h3.text
+		print " Showing matches for ", current_day
 
 		tables = current_day_matches[i].find_all('table', attrs = {'class': 'matches'})
 		for j in range(0, len(tables)):
@@ -58,9 +59,8 @@ def matches_today(date, soup, htmltext):
 
 def main():
 	date = get_current_date()
-	urls = ["http://www.goal.com/en-india/live-scores?ICID=HP_TN_8_2"]  
 
-	htmltext = get_html(urls[0])
+	htmltext = get_html(url.url['goal_live_india'])
 	soup = get_bsoup_object(htmltext)
 
 	matches_today(date, soup, htmltext)
