@@ -1,5 +1,5 @@
 import sys
-from src import tables, currentday
+from src import tables, currentday, news
 from src.util import errmsg, url
 
 def main():
@@ -20,6 +20,9 @@ def main():
 
 		elif sys.argv[1] == '--currentday' or sys.argv[1] == '-cd':
 			currentday.main()
+
+		elif sys.argv[1] == '--news' or sys.argv[1] == '-n':
+			news.main()
 
 if __name__ == "__main__":
 	main()

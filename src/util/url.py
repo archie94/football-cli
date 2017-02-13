@@ -7,7 +7,12 @@ url = {
 	'goal_table_laliga': 'http://www.goal.com/en-india/tables/primera-divisi%C3%B3n/7',
 	'goal_table_bundesliga': 'http://www.goal.com/en-india/tables/bundesliga/9',
 	'goal_table_ligue1': 'http://www.goal.com/en-india/tables/ligue-1/16',
-	'goal_table_serieA': 'http://www.goal.com/en-india/tables/serie-a/13'
+	'goal_table_serieA': 'http://www.goal.com/en-india/tables/serie-a/13',
+	'goal_news_england': 'http://www.goal.com/en-india/news/137/england?ICID=OP_TN_2_2_1', 
+	'goal_news_spain': 'http://www.goal.com/en-india/news/138/spain?ICID=SP_TN_2_2_2',
+	'goal_news_italy': 'http://www.goal.com/en-india/news/139/italy?ICID=SP_TN_2_2_3',
+	'goal_news_germany': 'http://www.goal.com/en-india/news/3753/germany?ICID=SP_TN_2_2_4',
+	'bbc_scorer_epl': 'http://www.bbc.com/sport/football/premier-league/top-scorers'
 }
 
 def get_html(url):
