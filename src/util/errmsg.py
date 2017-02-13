@@ -1,0 +1,1 @@
+usage = "USAGE : python footballcli.py --currentday"
