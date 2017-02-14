@@ -1,5 +1,5 @@
 import sys
-from src import tables, currentday, news
+from src import tables, currentday, news, scorers
 from src.util import errmsg, url
 
 def main():
@@ -23,6 +23,9 @@ def main():
 
 		elif sys.argv[1] == '--news' or sys.argv[1] == '-n':
 			news.main()
+
+		elif sys.argv[1] == '--topscorer' or sys.argv[1] == '-ts':
+			scorers.main()
 
 if __name__ == "__main__":
 	main()
