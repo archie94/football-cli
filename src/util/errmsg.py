@@ -1,1 +1,1 @@
-usage = "USAGE : python footballcli.py --currentday"
+usage = "USAGE : python footballcli.py [flags]\nFlags can be \n-t or --table along with league name ( Read README.md )\n-ts or --topscorer\n-cd or --currentday\n-n or --news"

@@ -16,7 +16,7 @@ def main():
 			elif sys.argv[2] == 'serieA':
 				tables.main(url.url['goal_table_serieA'])
 			else:
-				print "error"
+				print errmsg.usage
 
 		elif sys.argv[1] == '--currentday' or sys.argv[1] == '-cd':
 			currentday.main()
@@ -26,6 +26,12 @@ def main():
 
 		elif sys.argv[1] == '--topscorer' or sys.argv[1] == '-ts':
 			scorers.main()
+
+		else:
+			print errmsg.usage
+
+	else:
+		print errmsg.usage
 
 if __name__ == "__main__":
 	main()

@@ -58,6 +58,7 @@ def main(link):
 	soup = url.get_bsoup_object(htmltext)
 
 	get_table(soup, htmltext)
+	print 'Data collected from ', link
 
 if __name__ == "__main__":
 	main()
