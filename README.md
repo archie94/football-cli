@@ -9,7 +9,7 @@ Yet another CLI to show details of live football matches.
 ## Build
 
 ```
-git clone 
+git clone https://github.com/archie94/football-cli.git
 cd football-cli
 ```
 
