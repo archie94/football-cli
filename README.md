@@ -2,6 +2,10 @@
 
 Yet another CLI to show details of live football matches.
 
+![alt tag](https://github.com/archie94/football-cli/blob/master/screenshots/Screenshot%20from%202017-02-15%2023:37:16.png)
+![alt tag](https://github.com/archie94/football-cli/blob/master/screenshots/Screenshot%20from%202017-02-15%2023:38:11.png)
+![alt tag](https://github.com/archie94/football-cli/blob/master/screenshots/Screenshot%20from%202017-02-15%2023:38:33.png)
+
 ## Build
 
 ```
